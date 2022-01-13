@@ -18,7 +18,7 @@
             $result=mysqli_query($conn, "select * from user");
             while ($row=mysqli_fetch_array($result)){
                 echo "<tr><td><a href=user_edit_form.php?id={$row['id']}>修改</a>||<a href=user_delete.php?id={$row['id']}>刪除</a></td><td>{$row['id']}</td><td>{$row['pwd']}</td></tr>";
-            }#user_edit_form.php的 連結顯示修改 並傳入$row['id']的值作為get[id] 使用
+            }#user_edit_form.php的連結顯示:修改 並傳入$row['id']的值作為get[id] 使用
             echo "</table>";
         }
     ?> 
